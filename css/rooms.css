@@ -1,0 +1,332 @@
+:root {
+    --primary-color: #b8860b;
+    --primary-dark: #8b6914;
+    --primary-light: #d4af37;
+    --secondary-color: #2c3e50;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --text-color: #333;
+    --gray-light: #e9ecef;
+    --gray-medium: #ced4da;
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --box-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  
+  .col-lg-4, .col-md-6 {
+    padding: 15px;
+  }
+ 
+  .navbar {
+    display: flex;
+  }
+  
+  .navbar-brand img {
+    max-height: 50px;
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    color: var(--secondary-color);
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+  }
+  
+  .back-button:hover {
+    background-color: var(--gray-light);
+  }
+   
+  .back-button i {
+    margin-right: 8px;
+  }
+  
+ .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .room-counter {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+.img-fluid{
+  width: 100px;
+  height: 200px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem;
+    color: #b8860b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--secondary-colo);
+    margin-bottom: 15px;
+  }
+  
+  .section-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #777;
+  }
+
+   .room-card {
+    border: none;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  
+  .room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-hover);
+  }
+  
+  .room-img-container {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+  }
+  
+  .room-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .room-card:hover .room-img-container img {
+    transform: scale(1.05);
+  }
+  
+  .room-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .room-number {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .card-body {
+    padding: 25px;
+    flex-grow: 1;
+  }
+  
+  .rating {
+    margin-bottom: 15px;
+  }
+  
+  .rating i {
+    color: #ffc107;
+    font-size: 0.9rem;
+    margin-right: 2px;
+  }
+  
+  .card-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--secondary-color);
+  }
+  
+  .card-text {
+    color: #6c757d;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+  }
+  
+  .room-features {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .room-features li {
+    flex: 1 0 40%;
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #6c757d;
+  }
+  
+  .room-features li i {
+    margin-right: 8px;
+    color: var(--primary-color);
+  }
+  
+  .card-footer {
+    background-color: white;
+    border-top: 1px solid var(--gray-light);
+    padding: 20px 25px;
+  }
+  
+  .price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .price-period {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .availability {
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  
+  .available {
+    color: #28a745;
+  }
+  
+  .btn-book {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  
+  .btn-book:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  @media (min-width: 992px) {
+    .col-lg-4 {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .col-lg-4, .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    
+    .section-header h2 {
+      font-size: 2rem;
+    }
+    
+    .room-img-container {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .room-features li {
+      flex: 1 0 100%;
+    }
+    
+    .price {
+      font-size: 1.4rem;
+    }
+    
+    .card-footer .d-flex {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .btn-book {
+      width: 100%;
+    }
+  }

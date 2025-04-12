@@ -1,0 +1,87 @@
+.book-page {
+    background-color: #f9f4e8;
+    border: 1px solid #e0d5c0;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 
+                inset 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 900px;
+    position: relative;
+    min-height: 600px;
+}
+
+.page-header {
+    border-bottom: 1px solid #d9c7a7;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.page-header:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d9c7a7, transparent);
+}
+
+.page-title {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    color: #5a4a3a;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.page-number {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    color: #b3a58a;
+    font-style: italic;
+}
+
+.video-container {
+    border: 8px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.video-container:hover {
+    transform: scale(1.02);
+}
+
+.video-caption {
+    font-style: italic;
+    color: #7a6b58;
+    margin-top: 15px;
+    padding: 10px;
+    border-left: 3px solid #d9c7a7;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.bookmark {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 30px;
+    height: 100px;
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+    clip-path: polygon(0 0, 100% 0, 70% 50%, 100% 100%, 0 100%);
+    z-index: 1;
+}
+
+.back-button{
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .book-page {
+        padding: 20px;
+        min-height: auto;
+    }
+}

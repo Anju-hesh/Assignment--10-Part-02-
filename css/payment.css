@@ -1,0 +1,92 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.payment-container {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+.booking-summary {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.payment-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.payment-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+.payment-method {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.payment-method:hover {
+    border-color: #0d6efd;
+    background-color: #f8f9ff;
+}
+.payment-method.active {
+    border-color: #0d6efd;
+    background-color: #f8f9ff;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+.btn-pay {
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    border: none;
+    padding: 12px;
+    font-weight: 600;
+}
+.room-image {
+    border-radius: 5px;
+    object-fit: cover;
+    height: 100%;
+}
+.highlight-text {
+    color: #3a7bd5;
+    font-weight: 600;
+}
+.img-fluid{
+    width: 100px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+  
+.section-subtitle {
+    font-size: 0.9rem;
+    color: #b8860b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+  
+  .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .section-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #777;
+  }
+
+  .back-button{
+    color: black;
+    text-decoration: none;
+  }

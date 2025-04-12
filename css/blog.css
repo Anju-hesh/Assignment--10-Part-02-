@@ -1,0 +1,55 @@
+.video-section {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #dc3545;
+    bottom: -10px;
+    left: 25%;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.video-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.video-container:hover {
+    transform: scale(1.02);
+}
+
+.video-caption {
+    font-style: italic;
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+}
