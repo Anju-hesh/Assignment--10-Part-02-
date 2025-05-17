@@ -199,7 +199,7 @@
     color: white;
   }
   
-  @media (max-width: 992px) {
+  @media (max-width: 1124px) {
     .about-content {
       flex-direction: column;
     }
@@ -232,6 +232,7 @@
     }
     
     .section-header h2 {
+      margin-top: 80px;
       font-size: 2rem;
     }
     
@@ -248,7 +249,7 @@
     }
   }
   
-  @media (max-width: 576px) {
+  @media (max-width: 320px) {
     .cta-container {
       flex-direction: column;
     }
